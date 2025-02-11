@@ -29,6 +29,8 @@ class Grafo {
     public:
         static Grafo* criar(int numVertices, int tipo, bool direcionado);
         ~Grafo();
+        public:
+        int getNumVertices() const;
         bool cicloEuleriano();
         void buscaEmProfundidade();
         void buscaEmProfundidade(int origem);
