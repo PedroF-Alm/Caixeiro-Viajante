@@ -29,21 +29,22 @@ class Grafo {
     public:
         static Grafo* criar(int numVertices, int tipo, bool direcionado);
         ~Grafo();
-        public:
-        int getNumVertices() const;
         bool cicloEuleriano();
         void buscaEmProfundidade();
         void buscaEmProfundidade(int origem);
         void buscaEmLargura();
         void buscaEmLargura(int origem);
         void imprimirCaminho(int u, int v);
-        void kruskal();
-        void prim();
-        void dijkstra();
         bool buscarAresta(int u, int v);
         int pesoAresta(int u, int v);
         void inserirAresta(int u, int v);
         void inserirAresta(int u, int v, int peso);
         void removerAresta(int u, int v);
         void imprimir();
+        int getNumVertices() {
+            return numVertices;
+        }
+        int eVizinho(int u, int v) {
+            return matriz_adj[u][v];
+        }
 };

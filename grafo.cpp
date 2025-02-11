@@ -42,11 +42,6 @@ Grafo::~Grafo()
     }
 }
 
-int Grafo::getNumVertices() const { 
-    return numVertices; 
-}
-
-
 bool Grafo::avaliarVertice(int vertice)
 {
     return vertice >= 0 && vertice < numVertices; 
