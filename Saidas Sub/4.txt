@@ -1,0 +1,4 @@
+Solução subótima encontrada para N=10 cidades:
+	Caminho: 1, 2, 4, 5, 10, 8, 3, 7, 6, 9, 
+	Distancia: 9
+Tempo de execução: 0.0000s

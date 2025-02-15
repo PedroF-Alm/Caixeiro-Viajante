@@ -379,3 +379,26 @@ void Grafo::imprimir()
         }
     }
 }
+
+std::pair<std::vector<int>, int> Grafo::caixeiroViajanteSbOtm()
+{
+    int distancia = 0;
+    bool visitado[numVertices] = {false};
+    vector<int> rota = {0};
+    visitado[0] = true;
+    while (true)
+    {
+        int i = rota[rota.size() - 1];
+        int menor_v = i, menor_d = INT32_MAX;
+        for (int j = 0; j < numVertices; j++)
+            if (matriz_adj[i][j] > 0 && matriz_adj[i][j] < menor_d && !visitado[j] && i != j)
+                menor_d = matriz_adj[i][j], menor_v = j;
+        if (i == menor_v)
+            break;
+        rota.push_back(menor_v);
+        visitado[menor_v] = true;
+        distancia += menor_d;
+    }
+    return {rota, distancia};
+}
+

@@ -1,0 +1,4 @@
+Solução subótima encontrada para N=9 cidades:
+	Caminho: 1, 2, 4, 5, 6, 9, 8, 3, 7, 
+	Distancia: 8
+Tempo de execução: 0.0000s

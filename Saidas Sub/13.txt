@@ -1,0 +1,4 @@
+Solução subótima encontrada para N=13 cidades:
+	Caminho: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+	Distancia: 12
+Tempo de execução: 0.0000s

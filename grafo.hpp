@@ -1,5 +1,6 @@
 #include <vector>
 #include <set>
+#include <utility>
 
 #define LISTA_ADJ 1
 #define MATRIZ_ADJ 2
@@ -47,4 +48,5 @@ class Grafo {
         int eVizinho(int u, int v) {
             return matriz_adj[u][v];
         }
+        std::pair<std::vector<int>, int> caixeiroViajanteSbOtm();
 };

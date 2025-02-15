@@ -1,0 +1,4 @@
+Solução subótima encontrada para N=12 cidades:
+	Caminho: 1, 4, 2, 5, 9, 3, 6, 
+	Distancia: 6
+Tempo de execução: 0.0000s
